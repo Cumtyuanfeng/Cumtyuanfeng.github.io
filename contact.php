@@ -1,4 +1,28 @@
+<?php
+// Free html5 templates : www.zerotheme.com
 
+$text = "<span style='color:red; font-size: 35px; line-height: 40px; magin: 10px;'>Error! Please try again.</span>";
+
+if(isset($_POST['name']))
+{
+	$name=$_POST['name'];
+	$email=$_POST['email'];
+	$message=$_POST['message'];
+
+	$to = "youremail@gmail.com";
+	$subject = "Zerotheme - Testing Contact Form";
+	$message = " Name: " . $name ."\r\n Email: " . $email . "\r\n Message:\r\n" . $message;
+	 
+	$from = "Zerotheme";
+	$headers = "From:" . $from . "\r\n";
+	$headers .= "Content-type: text/plain; charset=UTF-8" . "\r\n"; 
+	 
+	if(@mail($to,$subject,$message,$headers))
+	{
+	  $text = "<span style='color:blue; font-size: 35px; line-height: 40px; margin: 10px;'>Your Message was sent successfully !</span>";
+	}
+}
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -47,8 +71,8 @@
 				<div class="col-1-2">
 					<div class="wrap-col">
 						<ul>
-							<li class="mail"><p>304105228@qq.com</p></li>
-							<li class="phone"><p>1234567</p></li>
+							<li class="mail"><p>ContacUst@Gmail.com</p></li>
+							<li class="phone"><p>80 88888 7</p></li>
 						</ul>
 					</div>
 				</div>
@@ -56,11 +80,11 @@
 					<div class="wrap-col f-right">
 						<ul>
 							<li><select>
-								<option value="en" selected>英语</option>
-								<option value="fe">法语</option>
-								<option value="ge">德语</option>
+								<option value="en" selected>English</option>
+								<option value="fe">France</option>
+								<option value="ge">Germany</option>
 							</select></li>
-							<li><p>语言</p></li>
+							<li><p>Language</p></li>
 						</ul>
 					</div>
 				</div>
@@ -88,14 +112,14 @@
 				<nav>
 					<div class="wrap-nav">
 					   <ul>
-						 <li class="active"><a href="index.html">主页</a></li>
-						 <li><a href="single.html">伟大的电影</a></li>
-						 <li><a href="single.html">最好的</a></li>
-						 <li><a href="single.html">奥斯卡</a></li>
-						 <li><a href="single.html">流派</a></li>
-						 <li><a href="single.html">引用</a></li>
-						 <li><a href="single.html">海报</a></li>
-						 <li><a href="contact.html">联系</a></li>
+						 <li class="active"><a href="index.html">Home</a></li>
+						 <li><a href="single.html">GREATEST FILMS</a></li>
+						 <li><a href="single.html">THE BEST</a></li>
+						 <li><a href="single.html">OSCARS</a></li>
+						 <li><a href="single.html">GENRES</a></li>
+						 <li><a href="single.html">QUOTES</a></li>
+						 <li><a href="single.html">POSTERS</a></li>
+						 <li><a href="contact.html">CONTACT</a></li>
 					   </ul>
 					</div>
 				</nav>
@@ -112,21 +136,24 @@
 			<div class="wrap-content">
 				<div class="contact">
 					<h2>Contact</h2>
+					<!--Warning-->
+					<center><?php echo $text;?></center>
+					<!---->
 					<div id="contact_form">
 						<form name="form1" id="ff" method="post" action="contact.php">
 							<label>
-							<span>请输入您的姓名:</span>
+							<span>Enter your name:</span>
 							<input type="text"  name="name" id="name" required>
 							</label>
 							<label>
-							<span>请输入您的邮箱:</span>
+							<span>Enter your email:</span>
 							<input type="email"  name="email" id="email" required>
 							</label>
 							<label>
-							<span>您的讯息:</span>
+							<span>Your message here:</span>
 							<textarea name="message" id="message"></textarea>
 							</label>
-							<center><input class="sendButton" type="submit" name="Submit" value="提交"></center>
+							<center><input class="sendButton" type="submit" name="Submit" value="Submit"></center>
 						</form>
 					</div>
 				</div>
@@ -137,7 +164,7 @@
 				<!---- Start Widget ---->
 				<div class="widget wid-new-updates">
 					<div class="wid-header">
-						<h5>热榜 !</h5>
+						<h5>Hot Updates !</h5>
 					</div>
 					<div class="wid-content">
 						<ul>
@@ -152,25 +179,25 @@
 				<!---- Start Widget ---->
 				<div class="widget wid-tag">
 					<div class="wid-header">
-						<h5>标签</h5>
+						<h5>Tags</h5>
 					</div>
 					<div class="wid-content">
 						<ul>
-						<li><a href="#">a</a></li>
-						<li><a href="#">b</a></li>
-						<li><a href="#">c</a></li>
-						<li><a href="#">d</a></li>
-						<li><a href="#">e</a></li>
-						<li><a href="#">f</a></li>
-						<li><a href="#">g</a></li>
-						<li><a href="#">h</a></li>
+						<li><a href="#">animals</a></li>
+						<li><a href="#">ssdad</a></li>
+						<li><a href="#">ss</a></li>
+						<li><a href="#">asdas</a></li>
+						<li><a href="#">asdsals</a></li>
+						<li><a href="#">dasdas</a></li>
+						<li><a href="#">animals</a></li>
+						<li><a href="#">aasdasls</a></li>
 						</ul>
 					</div>
 				</div>
 				<!---- Start Widget ---->
 				<div class="widget wid-post">
 					<div class="wid-header">
-						<h5>今日推荐</h5>
+						<h5>Today's movies</h5>
 					</div>
 					<div class="wid-content">
 						<div class="post">
@@ -248,7 +275,8 @@
 								<h5>Welcome</h5>
 							</div>
 							<div class="logo"><a href="#"><img src="images/logo.png"/></a></div>
-							<p </p>
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque quod maxime placeat 
+								facere possimus nihil impedit quo minus id quod maxime placeat facere possimus. </p>
 						</div>
 					</div>
 				</div>
@@ -261,7 +289,12 @@
 							<div class="widget-content">
 								<div class="row">
 									<ul>
-										
+										<li><a href="#">> Lorem ipsum dolor sit </a></li>
+										<li><a href="#">> Nullam venenatis lacus a </a></li>
+										<li><a href="#">> Morbi ut sapien nec nisl</a></li>
+										<li><a href="#">> Integer a enim ac ex.</a></li>
+										<li><a href="#">> Sed in nunc non eleifend  </a></li>
+										<li><a href="#">> Integer a enim ac ex.</a></li>
 									</ul>
 								</div>
 							</div>
@@ -275,7 +308,10 @@
 								<h5>Report Link</h5>
 							</div>
 							<div class="wid-content">
-								<p></p>
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+								eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+								At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr,  
+								sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
 							</div>
 						</div>
 					</div>
@@ -289,7 +325,12 @@
 							<div class="widget-content">
 								<div class="row">
 									<ul>
-										
+										<li><a href="#">> Lorem ipsum dolor sit </a></li>
+										<li><a href="#">> Nullam venenatis lacus a </a></li>
+										<li><a href="#">> Morbi ut sapien nec nisl</a></li>
+										<li><a href="#">> Integer a enim ac ex.</a></li>
+										<li><a href="#">> Sed in nunc non eleifend  </a></li>
+										<li><a href="#">> Integer a enim ac ex.</a></li>
 									</ul>
 								</div>
 							</div>
@@ -302,7 +343,7 @@
 	<div class="bottom-footer">
 		<div class="wrap-bottom ">
 			<div class="copyright">
-				
+				<p>©2015 - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
 			</div>
 		</div>
 	</div>

@@ -1,321 +1,596 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-<title>Home</title>
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Frederick Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->		
-<!--fonts-->
-<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
-<link href='http://fonts.useso.com/css?family=Viga' rel='stylesheet' type='text/css'>
-<!--//fonts-->
-<script src="js/jquery.min.js"> </script>
-		  		 <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-	<!-- js -->
-		 <script src="js/bootstrap.js"></script>
-	<!-- js -->
-		<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<!--/script-->
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-				});
-			});
-</script>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>zMovie</title>
+	<meta name="description" content="Free Responsive Html5 Css3 Templates | zerotheme.com">
+	<meta name="author" content="www.zerotheme.com">
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+    
 </head>
 <body>
-<!--header-->
-<div class="banner"> 
-	<div class="header">
-				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" /></a>
+<div class="wrap-body">
+
+<!--////////////////////////////////////Header-->
+<header>
+	<div class="top-bar">
+		<div class="wrap-top zerogrid">
+			<div class="row">
+				<div class="col-1-2">
+					<div class="wrap-col">
+						<ul>
+							<li class="mail"><p>304105228@qq.com</p></li>
+							<li class="phone"><p>1234567</p></li>
+						</ul>
+					</div>
 				</div>
-		<div class="navigation">
-			<nav class="navbar navbar-default">
-				<div class="navbar-header">
-					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"> </span>
-						<span class="icon-bar"> </span>
-						<span class="icon-bar"> </span>
-					  </button>
+				<div class="col-1-2">
+					<div class="wrap-col f-right">
+						<ul>
+							<li><select>
+								<option value="en" selected>英语</option>
+								<option value="fe">法语</option>
+								<option value="ge">德语</option>
+							</select></li>
+							<li><p>语言</p></li>
+						</ul>
 					</div>
-					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-					  <ul class="nav navbar-nav">
-						<li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="typography.html">Typrography</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
-					  </ul>
-			  <div class="clearfix"> </div>
-			</div><!-- /.navbar-collapse -->
-		</nav>
-	</div>
-	<div class="clearfix"> </div>
-</div>
-			  <!-- script-for-menu -->
-		 <script>
-				$("span.menu").click(function(){
-					$(".top-nav ul").slideToggle("slow" , function(){
-					});
-				});
-		 </script>
-		 <!-- script-for-menu -->
-		 <script src="js/responsiveslides.min.js"></script>
- <script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	nav: true,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
-  </script>
-<div class="slider">
-		   <div class="callbacks_container">
-			  <ul class="rslides" id="slider">
-				 <li>	
-				 	<h2>Fashion awards</h2>          
-					 <p>Fashion is a popular style or practice, especially in clothing, footwear, accessories, makeup, body piercing, or furniture. Fashion is a distinctive and often habitual trend in the style in which a person dresses</p>		          
-				 </li>
-				 <li>	  
-				 	 <h2>Fashion aesthetics</h2>         
-					 <p>Clothing, footwear Fashion is a popular style or practice, especially in clothing, footwear, accessories, makeup, body piercing, or furniture. Fashion is a distinctive and often habitual trend in the style in which a person dresses</p>		          
-				 </li>
-				 <li>	
-				 	<h2>History of fashion</h2>          
-					 <p>Fashion is a popular style or practice, especially in clothing, footwear, accessories, makeup, body piercing, or furniture. Fashion is a distinctive and often habitual trend in the style in which a person dresses</p>		          
-				 </li>
-			  </ul>
-		  </div>
-</div>
-</div>
-		<div class="clearfix"> </div>
-	</div>				 	
-<!--/header-->
-<div class="welcome">
-	<div class="container">
-		<h3>Welcome To Our Fashion Designs</h3>
-			<p>Dolor nunc vule putateulr ips dol consec.Donec sem ertet laciniate ultricie upie disse utes comete dolo lectus. fgilla itollicil tua ludin dolor nec met quam accumsan. Dolore condime netus lullam utlacus adipiscing ipsum molestie euismod lore estibulum vel libero ipsum sit
-				amet sollicitudin ante. Aenean imperdiet aliquet hendreritunc interdum ullamcorper lec tuset pellentesqu enim interdum atuspendisse malesuada dignissim.</p>
-	</div>
-</div>
-<div class="welcome-bottom">
-	<div class="container">
-		<div class="col-md-6 wel-img">
-			<a href="single.html" class="mask">
-				     <img src="images/wlb.jpg" class="img-responsive zoom-img" alt="">
-				</a>
-		</div>
-		<div class="col-md-6 wel-text">
-			<p>Dolor nunc vule putateulr ips dol consec.Donec sem ertet laciniate ultricie upie disse utes comete dolo lectus. 
-				fgilla itollicil tua ludin dolor nec met quam accumsan. Dolore condime netus lullam utlacus adipiscing ipsum molestie
-				 euismod lore estibulum vel libero ipsum sit
-				amet sollicitudin ante. Aenean imperdiet aliquet hendreritunc interdum ullamcorper lec tuset pellentesqu enim 
-				interdum atuspendisse malesuada dignissim.amet sollicitudin ante. Aenean imperdiet .</p>
-		</div>
-	</div>
-</div>
-<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >手机网站模板</a></div>
-<!--grid-hover-->
-<div class="index-portfilio">
-<div class="container">
-	<h3>Latest designs</h3>
-			<p class="index-p">Dolor nunc vule putateulr ips dol consec.Donec sem ertet laciniate ultricie upie disse utes comete dolo lectus. 
-				fgilla itollicil tua ludin dolor nec met quam accumsan. Dolore condime netus lullam utlacus adipiscing ipsum molestie
-				 euismod lore estibulum vel libero ipsum sit.</p>
-               <div class="grid">
-					<figure class="effect-layla">
-						<img src="images/a1.jpg" alt="img06"/>
-						<figcaption>
-							<h2>Crazy <span>Outlook</span></h2>
-							<p>When Layla appears, she brings an eternal summer along.</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-					<figure class="effect-layla">
-						<img src="images/a2.jpg" alt="img03"/>
-						<figcaption>
-							<h2>Crazy <span>Fashion</span></h2>
-							<p>When Layla appears, she brings an eternal summer along.</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-					<figure class="effect-layla">
-						<img src="images/a3.jpg" alt="img03"/>
-						<figcaption>
-							<h2>Crazy <span>Designs</span></h2>
-							<p>When Layla appears, she brings an eternal summer along.</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-					<figure class="effect-layla">
-						<img src="images/a4.jpg" alt="img03"/>
-						<figcaption>
-							<h2>Crazy <span>Libero</span></h2>
-							<p>When Layla appears, she brings an eternal summer along.</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-					<figure class="effect-layla">
-						<img src="images/a5.jpg" alt="img03"/>
-						<figcaption>
-							<h2>Crazy <span>Putateulr</span></h2>
-							<p>When Layla appears, she brings an eternal summer along.</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-					<figure class="effect-layla">
-						<img src="images/a6.jpg" alt="img03"/>
-						<figcaption>
-							<h2>Crazy <span>Fgilla</span></h2>
-							<p>When Layla appears, she brings an eternal summer along.</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-					<div class="clearfix"> </div>
-				</div>
-	</div>
-</div>
-<!--grid-hover-->
-<!--index-team-->
-<div class="content-team">
-			<div class="container">
-				<h3 class="m_1">Our team</h3>
-						<p class="content-t">Dolor nunc vule putateulr ips dol consec.Donec sem ertet laciniate ultricie upie disse utes comete dolo lectus. 
-				fgilla itollicil tua ludin dolor nec met quam accumsan. Dolore condime netus lullam utlacus adipiscing ipsum molestie
-				 euismod lore estibulum vel libero ipsum sit.</p>
-				<div class="team-left">
-					<div class="col-sm-3 team-top">
-						<div class="view view-seventh">
-								<a href="#"><img class="img-responsive" src="images/t1.jpg" alt=""></a>
-					                 <div class="mask">
-				 						<ul class="social-icons">
-											<li><a href="#"><span class="facebook"> </span></a></li>
-											<li><a href="#"><span class="twitter"> </span></a></li>
-											<li><a href="#"><span class="thumb"> </span></a></li>
-										</ul>
-                   					 </div>
-                   					 <h6>Contrary to popular</h6>
-			                    <p>But I must explain to you how all this mistaken idea of denouncing</p>
-                   		</div>
-					</div>
-					<div class="col-sm-3 team-top team-in">
-						<div class="view view-seventh">
-								<a href="#"><img class="img-responsive" src="images/t2.jpg" alt=""></a>
-								<div class="mask">
-				 						<ul class="social-icons">
-											<li><a href="#"><span class="facebook"> </span></a></li>
-											<li><a href="#"><span class="twitter"> </span></a></li>
-											<li><a href="#"><span class="thumb"> </span></a></li>
-										</ul>
-			                    </div>
-			                    <h6>Contrary to popular</h6>
-			                    <p>But I must explain to you how all this mistaken idea of denouncing</p>
-                   		 </div>
-					</div>
-					<div class="col-sm-3 team-top">
-						<div class="view view-seventh">
-									<a href="#"><img class="img-responsive" src="images/t3.jpg" alt=""></a>
-									<div class="mask">
-				 						<ul class="social-icons">
-											<li><a href="#"><span class="facebook"> </span></a></li>
-											<li><a href="#"><span class="twitter"> </span></a></li>
-											<li><a href="#"><span class="thumb"> </span></a></li>
-										</ul>
-				                    </div>
-				                    <h6>Contrary to popular</h6>
-			                    <p>But I must explain to you how all this mistaken idea of denouncing</p>
-                   		</div>
-					</div>
-					<div class="col-sm-3 team-top top-team">
-						<div class="view view-seventh">
-									<a href="#"><img class="img-responsive" src="images/t4.jpg" alt=""></a>
-								<div class="mask">
-				 						<ul class="social-icons">
-											<li><a href="#"><span class="facebook"> </span></a></li>
-											<li><a href="#"><span class="twitter"> </span></a></li>
-											<li><a href="#"><span class="thumb"> </span></a></li>
-										</ul>
-			                    </div>
-			                    <h6>Contrary to popular</h6>
-			                    <p>But I must explain to you how all this mistaken idea of denouncing</p>
-			            </div>
-					</div>
-					<div class="clearfix"> </div>
 				</div>
 			</div>
 		</div>
-<!--/index-team-->
-<!--footer-->
-<div class="footer">
-			 <div class="container">				 	
-				 <div class="col-md-3 ftr_navi ftr">
-					 <h3>Navigation</h3>
-					 <ul>
-						 <li><a href="index.html">Home</a></li>
-						 <li><a href="about.html">About</a></li>
-						 <li><a href="gallery.html">Gallery</a></li>						
-						 <li><a href="blog.html">Blog</a></li>
-						 <li><a href="contact.html">Contact</a></li>
-					 </ul>
-				 </div>
-				 <div class="col-md-3 ftr_navi ftr">
-					 <h3>Members</h3>
-					 <ul>
-						 <li><a href="#">Customer Support</a></li>
-						 <li><a href="#">Platinum Support</a></li>
-						 <li><a href="#">Gold Support</a></li>						
-						 <li><a href="#">Standard Support</a></li>
-						 <li><a href="#">Training</a></li>
-					 </ul>
-				 </div>
-				 <div class="col-md-3 get_in_touch ftr">
-					  <h3>Get In Touch</h3>
-					  <p>Ola-ola street jump,</p>
-					  <p>260-14 City, Country</p>
-					  <p>+62 000-0000-00</p>
-					  <a href="mailto:mail@mlampah.com">www.example.com</a>
-				 </div>
-				 <div class="col-md-3 ftr-logo">
-					  <a href="index.html"><img src="images/logo.png" alt=""/></a>
-					 <p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
-				 </div>
-				<div class="clearfix"> </div>
-			 </div>
-		  </div>
-<!--/footer-->
-<script type="text/javascript">
-		$(document).ready(function() {
-				/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-				*/
-		$().UItoTop({ easingType: 'easeOutQuart' });
-});
-</script>
-<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!----> 
 	</div>
-	<!--footer-starts-->
-</body>
-</html>
+	<div class="wrap-header zerogrid">
+		<div class="row">
+			<div class="col-1-2">
+				<div class="wrap-col">
+					<div class="logo"><a href="#"><img src="images/logo.png"/></a></div>	
+				</div>
+			</div>
+			<div class="col-1-2">
+				<div class="wrap-col f-right">
+					<form method="get" action="/search" id="search"  >
+					  <input name="q" type="text" size="40" placeholder="Search..." />
+					  <input type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="menu">
+				<nav>
+					<div class="wrap-nav">
+					   <ul>
+						 <li class="active"><a href="index.html">主页</a></li>
+						 <li><a href="single.html">伟大的电影</a></li>
+						 <li><a href="single.html">最好的</a></li>
+						 <li><a href="single.html">奥斯卡</a></li>
+						 <li><a href="single.html">流派</a></li>
+						 <li><a href="single.html">引用</a></li>
+						 <li><a href="single.html">海报</a></li>
+						 <li><a href="contact.html">联系</a></li>
+					   </ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="copyrights"> <a href="http://www.cssmoban.com/" ></a></div>
+
+<!--////////////////////////////////////Container-->
+<section id="container">
+	<div class="wrap-container zerogrid">
+		<div id="main-content" class="col-2-3">
+			<div class="wrap-content">
+				<div class="movie">
+					<div class="row type">
+						<div class="title">
+							<center><h2>MOVIE</h2></center>
+						</div>
+						<ul>
+							<li>
+								<select>
+									<option value="audi" selected>Type</option>
+									<option value="volvo">Text Text</option>
+									<option value="saab">Text Text</option>
+									<option value="volvo">Text Text</option>
+									<option value="saab">Text Text</option>
+									<option value="volvo">Text Text</option>
+									<option value="saab">Text Text</option>
+									<option value="volvo">Text Text</option>
+									<option value="saab">Text Text</option>
+									<option value="volvo">Text Text</option>
+									<option value="saab">Text Text</option>
+								</select>
+							</li>
+							<li><a class="button " href="#">搜索</a></li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect">  
+									 <img class="thumb" src="images/1.jpg"  />
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a>  
+									  </div>  
+									  
+									</div>
+									<div class="clear"></div>
+									<a href="single.html"><h3>致命武器4</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect">  
+									  <img class="thumb" src="images/2.jpg"  /> 
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a>  
+									  </div>  
+									</div>
+									<a href="single.html"><h3>电影名</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect">  
+									 <img class="thumb" src="images/4.jpg"  /> 
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a> 
+									  </div>  
+									</div>
+									<a href="single.html"><h3>战争之王</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect"> 
+									  <img class="thumb" src="images/5.jpg"  />  
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a>  
+									  </div>  
+									</div>
+									<a href="single.html"><h3>The Sorcerer's Apprentice</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect">  
+									  <img class="thumb" src="images/3.jpg"  />   
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a> 
+									  </div>  
+									</div>
+									<a href="single.html"><h3>国家宝藏</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect">  
+									  <img class="thumb" src="images/6.jpg"  />   
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a>  
+									  </div>  
+									</div>
+									<a href="single.html"><h3>寻求正义</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect">  
+									  <img class="thumb" src="images/7.jpg"  /> 
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a>  
+									  </div>  
+									</div>
+									<a href="single.html"><h3>女巫季节</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect">  
+									  <img class="thumb" src="images/8.jpg"  />   
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a>  
+									  </div>  
+									</div>
+									<a href="single.html"><h3>Three Mustketeers</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<center><div class="pagination">
+						<a href="#" class="page gradient">first</a><a
+						href="#" class="page gradient">2</a><a href="#"
+						class="page gradient">3</a><span class=
+						"page active">4</span><a href="#" class=
+						"page gradient">5</a><a href="#" class=
+						"page gradient">6</a><a href="#" class=
+						"page gradient">last</a>
+					</div></center>
+				</div>
+				<div class="serie">
+					<div class="row type">
+						<div class="title">
+							<center><h2>SERIE</h2></center>
+						</div>
+						<ul>
+							<li>
+								<select>
+									<option value="audi" selected>Type</option>
+									<option value="volvo">Text Text</option>
+									<option value="saab">Text Text</option>
+									<option value="volvo">Text Text</option>
+									<option value="saab">Text Text</option>
+									<option value="volvo">Text Text</option>
+									<option value="saab">Text Text</option>
+									<option value="volvo">Text Text</option>
+									<option value="saab">Text Text</option>
+									<option value="volvo">Text Text</option>
+									<option value="saab">Text Text</option>
+								</select>
+							</li>
+							
+							<li><a class="button " href="#">搜索</a></li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect">  
+									  <img class="thumb" src="images/9.jpg"  /> 
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a>  
+									  </div>  
+									</div>
+									<a href="single.html"><h3>神探福尔摩斯</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect">  
+									  <img class="thumb" src="images/10.jpg"  /> 
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a> 
+									  </div>  
+									</div>
+									<a href="single.html"><h3>消失的子弹</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect">  
+									 <img class="thumb" src="images/4.jpg"  /> 
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a> 
+									  </div>  
+									</div>
+									<a href="single.html"><h3>lord of War</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect"> 
+									  <img class="thumb" src="images/11.jpg"  />  
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a> 
+									  </div>  
+									</div>
+									<a href="single.html"><h3>This Means War</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect">  
+									  <img class="thumb" src="images/12.jpg"  />   
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a> 
+									  </div>  
+									</div>
+									<a href="single.html"><h3>大追捕</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect">  
+									  <img class="thumb" src="images/13.jpg"  />   
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a>  
+									  </div>  
+									</div>
+									<a href="single.html"><h3>B+侦探</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect">  
+									  <img class="thumb" src="images/19.jpg"  /> 
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a>  
+									  </div>  
+									</div>
+									<a href="single.html"><h3>The Hit List</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="post">
+									<div class="view effect">  
+									  <img class="thumb" src="images/20.jpg"  />   
+									  <div class="mask">  
+										<a href="single.html" class="info" title="Full Image"><img src="images/play_button_64.png" /></a>  
+									  </div>  
+									</div>
+									<a href="single.html"><h3>Mad Max Fury Road</h3></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<center><div class="pagination">
+						<a href="#" class="page gradient">上页</a><a
+						href="#" class="page gradient">2</a><a href="#"
+						class="page gradient">3</a><span class=
+						"page active">4</span><a href="#" class=
+						"page gradient">5</a><a href="#" class=
+						"page gradient">6</a><a href="#" class=
+						"page gradient">下页</a>
+					</div></center>
+				</div>
+			</div>
+		</div>
+		<div id="sidebar" class="col-1-3">
+			<div class="wrap-sidebar">
+				<!---- Start Widget ---->
+				<div class="widget wid-new-updates">
+					<div class="wid-header">
+						<h5>热门更新 !</h5>
+					</div>
+					<div class="wid-content">
+						<ul>
+						<li><a href="#">Mad Max: Fury Road</a><span><img src="images/hot.png" /></span></li>
+						<li><a href="#">The Age of Adaline</a><span><img src="images/hot.png" /></span></li>
+						<li><a href="#">Pound of Flesh</a><span><img src="images/hot.png" /></span></li>
+						<li><a href="#">Bloodbath Island</a><span><img src="images/hot.png" /></span></li>
+						<li><a href="#">Pound of Flesh</a><span><img src="images/hot.png" /></span></li>
+						</ul>
+					</div>
+				</div>
+				<!---- Start Widget ---->
+				<div class="widget wid-tag">
+					<div class="wid-header">
+						<h5>标签</h5>
+					</div>
+					<div class="wid-content">
+						<ul>
+						<li><a href="#">a</a></li>
+						<li><a href="#">b</a></li>
+						<li><a href="#">c</a></li>
+						<li><a href="#">d</a></li>
+						<li><a href="#">e</a></li>
+						<li><a href="#">f</a></li>
+						<li><a href="#">g</a></li>
+						<li><a href="#">h</a></li>
+						</ul>
+					</div>
+				</div>
+				<!---- Start Widget ---->
+				<div class="widget wid-post">
+					<div class="wid-header">
+						<h5>每日推荐</h5>
+					</div>
+					<div class="wid-content">
+						<div class="post">
+							<a href="#"><img src="images/1.jpg"/></a>
+							<div class="wrapper">
+							  <a href="#"><h6>A Blue Morning</h6></a>
+							  <p>March 1, 2015</p>
+							  <a href="#"><img src="images/star.png" /></a>
+							</div>
+						</div>
+						<div class="post">
+							<a href="#"><img src="images/2.jpg"/></a>
+							<div class="wrapper">
+							 <a href="#"><h6>A Blue Morning</h6></a>
+							  <p>March 1, 2015</p>
+							  <a href="#"><img src="images/star.png" /></a>
+							</div>
+						</div>
+						<div class="post">
+							<a href="#"><img src="images/3.jpg"/></a>
+							<div class="wrapper">
+							 <a href="#"><h6>A Blue Morning</h6></a>
+							  <p>March 1, 2015</p>
+							  <a href="#"><img src="images/star.png" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!---- Start Widget ---->
+				<div class="widget wid-last-updates">
+					<div class="wid-header">
+						<h5>Lastest Updates</h5>
+					</div>
+					<div class="wid-content">
+						<div class="post">
+							<a href="#"><img src="images/1.jpg"/></a>
+							<div class="wrapper">
+							  <a href="#"><h6>A Blue Morning</h6></a>
+							  <p>March 1, 2015</p>
+							  <a href="#"><img src="images/star.png" /></a>
+							</div>
+						</div>
+						<div class="post">
+							<a href="#"><img src="images/2.jpg"/></a>
+							<div class="wrapper">
+							 <a href="#"><h6>A Blue Morning</h6></a>
+							  <p>March 1, 2015</p>
+							  <a href="#"><img src="images/star.png" /></a>
+							</div>
+						</div>
+						<div class="post">
+							<a href="#"><img src="images/3.jpg"/></a>
+							<div class="wrapper">
+							 <a href="#"><h6>A Blue Morning</h6></a>
+							  <p>March 1, 2015</p>
+							  <a href="#"><img src="images/star.png" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--////////////////////////////////////Footer-->
+<footer>
+	<div class="zerogrid">
+		<div class="wrap-footer">
+			<div class="row">
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="widget wid-about">
+							<div class="wid-header">
+								<h5>Welcome</h5>
+							</div>
+							<div class="log"><a href="#"><img src="images/logo.png"/></a></div>
+							<p> </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="widget wid-meta">
+							<div class="wid-header">
+								<h5>Links List</h5>
+							</div>
+							<div class="widget-content">
+								<div class="row">
+									<ul>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="widget wid-report">
+							<div class="wid-header">
+								<h5>Report Link</h5>
+							</div>
+							<div class="wid-content">
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="widget wid-meta">
+							<div class="wid-header">
+								<h5>Links List</h5>
+							</div>
+							<div class="widget-content">
+								<div class="row">
+									<ul>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-footer">
+		<div class="wrap-bottom ">
+			<div class="copyright">
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+</div>
+<script src="js/css3-mediaqueries.js"></script>
+<script src="js/jquery.min.js"></script>
+</body></html>
